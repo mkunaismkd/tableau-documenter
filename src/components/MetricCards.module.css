@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.blue  { background: #E6F1FB; color: #185FA5; }
+.green { background: #EAF3DE; color: #3B6D11; }
+.amber { background: #FAEEDA; color: #854F0B; }
+.teal  { background: #E1F5EE; color: #0F6E56; }
+.coral { background: #FAECE7; color: #993C1D; }
+.purple { background: #EEEDFE; color: #534AB7; }
+
+@media (prefers-color-scheme: dark) {
+  .blue   { background: #0d2340; color: #85B7EB; }
+  .green  { background: #1a2e10; color: #97C459; }
+  .amber  { background: #2e1e08; color: #EF9F27; }
+  .teal   { background: #0a2820; color: #5DCAA5; }
+  .coral  { background: #2e1008; color: #F0997B; }
+  .purple { background: #1a1840; color: #AFA9EC; }
+}

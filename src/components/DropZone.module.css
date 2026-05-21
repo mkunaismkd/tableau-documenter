@@ -1,0 +1,85 @@
+.zone {
+  border: 1.5px dashed #c0c8d8;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  background: #fff;
+  user-select: none;
+}
+
+.zone:hover, .dragging {
+  border-color: #185FA5;
+  background: #EFF6FF;
+}
+
+.loading {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.iconWrap {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem;
+  background: #E6F1FB;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #185FA5;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2.5px solid #B5D4F4;
+  border-top-color: #185FA5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.primary {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.secondary {
+  font-size: 13px;
+  color: #888;
+}
+
+.link {
+  color: #185FA5;
+  text-decoration: underline;
+}
+
+.pills {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.pill {
+  background: #F1EFE8;
+  color: #5F5E5A;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  .zone { background: #1a1f2e; border-color: #2e3650; }
+  .zone:hover, .dragging { background: #1a2540; border-color: #378ADD; }
+  .primary { color: #e8eaf0; }
+  .secondary { color: #888; }
+  .iconWrap { background: #0d2340; }
+  .pill { background: #2a2a2a; color: #aaa; }
+}

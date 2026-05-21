@@ -1,0 +1,228 @@
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.card {
+  background: #fff;
+  border: 0.5px solid #e4e7ef;
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  transition: border-color 0.15s;
+}
+
+.card:hover { border-color: #b5d4f4; }
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  color: #1a1a2e;
+}
+
+.cardBody { margin-top: 10px; padding-top: 10px; border-top: 0.5px solid #f0f2f8; }
+
+.tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.tagBlue   { background: #E6F1FB; color: #185FA5; }
+.tagGreen  { background: #EAF3DE; color: #3B6D11; }
+.tagTeal   { background: #E1F5EE; color: #0F6E56; }
+.tagAmber  { background: #FAEEDA; color: #854F0B; }
+.tagCoral  { background: #FAECE7; color: #993C1D; }
+.tagGray   { background: #F1EFE8; color: #5F5E5A; }
+
+.section { margin-top: 12px; }
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.tableList { display: flex; flex-direction: column; gap: 4px; }
+
+.tableRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 13px;
+  border-bottom: 0.5px solid #f5f6f8;
+}
+
+.tableRow:last-child { border-bottom: none; }
+
+.tableRow code {
+  color: #185FA5;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 12px;
+}
+
+.fieldGrid { display: flex; flex-direction: column; gap: 3px; max-height: 280px; overflow-y: auto; }
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.fieldRow:nth-child(odd) { background: #f8f9fc; }
+
+.fieldName { color: #333; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.formula {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  background: #f6f8fc;
+  border: 0.5px solid #e4e7ef;
+  border-radius: 6px;
+  padding: .6rem .8rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: #185FA5;
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.sqlBlock {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  background: #0d1117;
+  color: #e6edf3;
+  border-radius: 6px;
+  padding: .75rem 1rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.comment {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  margin: 4px 0;
+  padding-left: 4px;
+  border-left: 2px solid #ddd;
+}
+
+.metaRow { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.metaItem { display: flex; flex-direction: column; gap: 2px; }
+
+.metaLabel { font-size: 11px; color: #aaa; }
+
+.metaItem code {
+  font-size: 12px;
+  color: #185FA5;
+  font-family: monospace;
+}
+
+.valuePill {
+  background: #f1f5fb;
+  border: 0.5px solid #d5e3f7;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-size: 11px;
+  color: #185FA5;
+}
+
+.sheetRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .55rem 1rem;
+  border-bottom: 0.5px solid #f0f2f8;
+  font-size: 13px;
+  gap: 8px;
+}
+
+.sheetRow:last-child { border-bottom: none; }
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 0.5px solid #d8dce8;
+  border-radius: 8px;
+  padding: 0 12px;
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 9px 0;
+  border: none;
+  background: none;
+  font-size: 13px;
+  color: #1a1a2e;
+  outline: none;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 18px;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty p { font-size: 14px; }
+
+@media (prefers-color-scheme: dark) {
+  .card { background: #1a1f2e; border-color: #2e3650; }
+  .card:hover { border-color: #378ADD; }
+  .cardTitle { color: #e8eaf0; }
+  .cardBody { border-top-color: #2e3650; }
+  .fieldRow:nth-child(odd) { background: #1e2540; }
+  .fieldName { color: #c8cad8; }
+  .formula { background: #0d1117; border-color: #2e3650; color: #85B7EB; }
+  .searchBar { background: #1a1f2e; border-color: #2e3650; }
+  .searchInput { color: #e8eaf0; }
+  .sheetRow { border-bottom-color: #2e3650; }
+  .tableRow { border-bottom-color: #2e3650; }
+  .tagBlue  { background: #0d2340; color: #85B7EB; }
+  .tagGreen { background: #1a2e10; color: #97C459; }
+  .tagTeal  { background: #0a2820; color: #5DCAA5; }
+  .tagAmber { background: #2e1e08; color: #EF9F27; }
+  .tagCoral { background: #2e1008; color: #F0997B; }
+  .tagGray  { background: #252520; color: #B4B2A9; }
+  .valuePill { background: #0d2340; border-color: #185FA5; }
+}
